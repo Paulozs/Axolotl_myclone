@@ -1,4 +1,5 @@
-base_model: NousResearch/Llama-2-7b-hf
+base_model: ../../../drive/MyDrive/ADLHW3/Taiwan-LLM-7B-v2.0-chat
+#NousResearch/Llama-2-7b-hf
 model_type: LlamaForCausalLM
 tokenizer_type: LlamaTokenizer
 is_llama_derived_model: true
@@ -8,7 +9,8 @@ load_in_4bit: true
 strict: false
 
 datasets:
-  - path: mhenrichsen/alpaca_2k_test
+  - path: ../../../drive/MyDrive/ADLHW3/data/train.json
+    #mhenrichsen/alpaca_2k_test
     type: alpaca
 dataset_prepared_path:
 val_set_size: 0.05
